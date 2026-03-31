@@ -13,7 +13,11 @@ pipeline {
                 echo "Building.."
                 sh '''
                 echo "doing build stuff.."
+                '''echo "Building..2.0"
+                sh '''
+                echo "doing build stuff.."
                 '''
+                
             }
         }
         stage('Test') {
